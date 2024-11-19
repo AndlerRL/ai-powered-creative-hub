@@ -33,7 +33,7 @@ export default function FlappyBird() {
 
   // Handle keyboard controls
   useEffect(() => {
-    const handleKeyPress = (e: any) => {
+    const handleKeyPress = (e: KeyboardEvent) => {
       if (e.code === "Space") {
         e.preventDefault();
         if (!isPlaying && !gameOver) {
