@@ -15,7 +15,7 @@ export default function FlappyBird() {
 
   // Gravity effect
   useEffect(() => {
-    let gameLoop: any;
+    let gameLoop: NodeJS.Timeout;
     if (isPlaying) {
       gameLoop = setInterval(() => {
         setBirdPosition((position) => {
